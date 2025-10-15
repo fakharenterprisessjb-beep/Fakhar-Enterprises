@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Fahad Enterprise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Fahad Enterprise</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid-2">
+      <div>
+        <h1>Contact Us</h1>
+        <p id="schedule">Schedule a meeting or ask a question. We’ll get back to you soon.</p>
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="message" rows="6" required></textarea>
+          </label>
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
+        <p class="tiny">This form opens your email client with the details pre‑filled.</p>
+      </div>
+      <aside class="contact-aside">
+        <h2>Locations</h2>
+        <p>Address 1: Business Incubation Center, Institute of Space Technology, Islamabad</p>
+        <p>Address 2: River Gardens, Islamabad</p>
+        <h2>Phone & Email</h2>
+        <!-- <p>Phone: <a href="tel:+92514493391">+92 51 4493391</a></p> -->
+        <p>Email: <a href="mailto:contact@inphoenixaviation.com">contact@inphoenixaviation.com</a><br />
+           <a href="mailto:inphoenixaviation@gmail.com">inphoenixaviation@gmail.com</a></p>
+        <img class="card-img" src="https://via.placeholder.com/640x420?text=Map+Placeholder" alt="Map placeholder" />
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Fahad Enterprise</h4>
+        <p>Where Engineering Meets the Sky.</p>
+      </div>
+      <div>
+        <h5>Contact Us</h5>
+        <p>Address 1: Business Incubation Center, Institute of Space Technology, Islamabad</p>
+        <p>Address 2: River Gardens, Islamabad</p>
+        <!-- <p>Phone: <a href="tel:+92514493391">+92 51 4493391</a></p> -->
+        <p>Email: <a href="mailto:contact@inphoenixaviation.com">contact@inphoenixaviation.com</a> / <a href="mailto:inphoenixaviation@gmail.com">inphoenixaviation@gmail.com</a></p>
+      </div>
+      <div>
+        <h5>Connect with us</h5>
+        <p><a href="#">LinkedIn</a> · <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Fahad Enterprise. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
