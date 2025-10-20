@@ -1,81 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Fahad Enterprise</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Fahad Enterprise</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <nav class="site-nav" aria-label="Main">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link active" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Fakhar Enterprises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Fakhar Enterprises Logo"
+            class="logo"
+          />
+          <span class="brand-text">Fakhar Enterprises</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="site-nav" aria-label="Main">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="section">
-    <div class="container grid-2">
-      <div>
-        <h1>Contact Us</h1>
-        <p id="schedule">Schedule a meeting or ask a question. We’ll get back to you soon.</p>
-        <form class="contact-form" id="contactForm">
-          <label>
-            <span>Name</span>
-            <input type="text" id="name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" id="email" required />
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea id="message" rows="6" required></textarea>
-          </label>
-          <button class="btn btn-accent" type="submit">Send</button>
-        </form>
-        <p class="tiny">This form opens your email client with the details pre‑filled.</p>
-      </div>
-      <aside class="contact-aside">
-        <h2>Locations</h2>
-        <p>Address 1: Business Incubation Center, Institute of Space Technology, Islamabad</p>
-        <p>Address 2: River Gardens, Islamabad</p>
-        <h2>Phone & Email</h2>
-        <!-- <p>Phone: <a href="tel:+92514493391">+92 51 4493391</a></p> -->
-        <p>Email: <a href="mailto:contact@inphoenixaviation.com">contact@inphoenixaviation.com</a><br />
-           <a href="mailto:inphoenixaviation@gmail.com">inphoenixaviation@gmail.com</a></p>
-        <img class="card-img" src="https://via.placeholder.com/640x420?text=Map+Placeholder" alt="Map placeholder" />
-      </aside>
-    </div>
-  </main>
+    <main class="section">
+      <div class="container grid-2">
+        <div class="contact-form-container" data-aos="fade-left">
+          <h1>Get in Touch</h1>
+          <p id="schedule" class="lead">
+            Schedule a meeting or ask a question. We’ll get back to you soon.
+          </p>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Fahad Enterprise</h4>
-        <p>Where Engineering Meets the Sky.</p>
-      </div>
-      <div>
-        <h5>Contact Us</h5>
-        <p>Address 1: Business Incubation Center, Institute of Space Technology, Islamabad</p>
-        <p>Address 2: River Gardens, Islamabad</p>
-        <!-- <p>Phone: <a href="tel:+92514493391">+92 51 4493391</a></p> -->
-        <p>Email: <a href="mailto:contact@inphoenixaviation.com">contact@inphoenixaviation.com</a> / <a href="mailto:inphoenixaviation@gmail.com">inphoenixaviation@gmail.com</a></p>
-      </div>
-      <div>
-        <h5>Connect with us</h5>
-        <p><a href="#">LinkedIn</a> · <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">© <span id="year"></span> Fahad Enterprise. All rights reserved.</div>
-  </footer>
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xeordynn"
+            method="POST"
+          >
+            <label>
+              <span>Name *</span>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your full name"
+              />
+              <span class="error-message" data-error="name"
+                >Please enter your name.</span
+              >
+            </label>
 
-  <script src="script.js"></script>
-</body>
+            <label>
+              <span>Email *</span>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                required
+                placeholder="name@example.com"
+              />
+              <span class="error-message" data-error="email"
+                >Please enter a valid email address.</span
+              >
+            </label>
+
+            <label>
+              <span>Message *</span>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+              <span class="error-message" data-error="message"
+                >Please enter a message.</span
+              >
+            </label>
+
+            <button class="btn btn-accent" type="submit">Send Inquiry</button>
+            <p class="tiny form-note">
+              Note: Submitting this form will open your default email client
+              with your message pre-filled.
+            </p>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <h2 id="ask">Locations</h2>
+          <p>Railway Road, Shujabad, Multan</p>
+          <!-- <p><strong>Business Incubation Center</strong><br/>Institute of Space Technology, Islamabad</p> -->
+          <!-- <p><strong>River Gardens</strong><br/>Islamabad</p> -->
+
+          <h2>Phone & Email</h2>
+          <p>
+            Phone:
+            <a href="tel:+923014340649" class="link-more">+92 301 4340649</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:info@fakharenterprises" class="link-more"
+              >info@fakharenterprises.com</a
+            ><br />
+
+            <!-- <img class="card-img" src="" alt="Map placeholder for Islamabad office location" /> -->
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Fakhar Enterprises</h4>
+          <p>Where Engineering Meets the Sky.</p>
+        </div>
+        <div>
+          <h5>Contact Us</h5>
+          <!-- <p>Address 1: Business Incubation Center, Institute of Space Technology, Islamabad</p> -->
+          <p>Address : Railway Road, Shujabad, Multan</p>
+          <p>Phone: <a href="tel:+923014340649">+92 301 4340649</a></p>
+          <p>
+            Email:
+            <a href="mailto:info@fakharenterprises.com"
+              >info@fakharenterprises.com</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h5>Connect with us</h5>
+          <p>
+            <a href="#">LinkedIn</a> · <a href="#">Facebook</a> ·
+            <a href="#">Instagram</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Fakhar Enterprise. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
