@@ -135,6 +135,12 @@ img{
   margin:0 0 30px;
   font-weight:500;
 } 
+.lead2{
+  font-size:1.35rem;
+  color:var(--text-light);
+  margin:0 0 30px;
+  font-weight:500;
+}
 .actions{display:flex;gap:16px;flex-wrap:wrap}
 
 /* Sections */
